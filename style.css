@@ -1,0 +1,164 @@
+body {
+    background-color: #191414;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    color: #1DB954;
+}
+
+nav {
+    padding: 8px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #1DB954;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero, .music-card, .about, .playlist, .login-box {
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#hero-title {
+    color: white;
+}
+
+.hero-image {
+    width: 60%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.button, .join {
+    display: inline-block;
+    background-color: #1DB954;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover, .join:hover {
+    background-color: #1ed760;
+    color: black;
+}
+
+.music-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.music-card {
+    flex: 1;
+}
+
+.music-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.music-card a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+.music-card a:hover {
+    color: white;
+}
+
+.playlist-image {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#playlist-title {
+    color: #1DB954;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #242424;
+}
+
+th, td {
+    border: 1px solid #444444;
+    padding: 10px;
+}
+
+th {
+    background-color: #000000;
+    color: #1DB954;
+}
+
+.login-box {
+    width: 300px;
+    max-width: 90%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+}
+
+.about {
+    background-color: #242424;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 30px 0;
+    border-left: 4px solid #1DB954;
+}
+
+.about h2 {
+    color: #1DB954;
+}
+
+.about p {
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    .music-container {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+}
